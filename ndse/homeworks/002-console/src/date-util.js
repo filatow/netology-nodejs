@@ -8,16 +8,19 @@ function runDateUtil() {
     .option('year', {
       alias: 'y',
       type: 'boolean',
+      describe: 'Show year',
       default: false,
     })
     .option('month', {
       alias: 'm',
       type: 'boolean',
+      describe: 'Show month',
       default: false,
     })
     .option('date', {
       alias: 'd',
       type: 'boolean',
+      describe: 'Show day',
       default: false,
     })
     .help()
