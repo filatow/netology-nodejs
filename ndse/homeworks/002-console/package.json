@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "date-util": "./bin/date-util.js"
+    "date-util": "./bin/date-util.js",
+    "guess-number": "./bin/guess-number.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
