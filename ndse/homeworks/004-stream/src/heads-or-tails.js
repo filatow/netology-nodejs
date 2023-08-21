@@ -6,13 +6,13 @@ const {
   stdout: output,
 } = require('node:process');
 
-const DEFAULT_LOGFILE = 'results.txt';
+const { DEFAULT_LOGFILE } = require('./consts');
 
 function playHeadsOrTails(
   logFile = path.resolve(
     __dirname,
     '../logs',
-    path.basename(process.argv[2]) ?? DEFAULT_LOGFILE)
+    path.basename(process.argv[2] ?? DEFAULT_LOGFILE))
 ) {
   const target = Math.random() < 0.5 ? 1 : 2;
   const rl = readline.createInterface({ input, output });
